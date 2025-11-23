@@ -533,6 +533,336 @@ body {
     border-radius: 4px;
 }
 
+
+
 .files-list::-webkit-scrollbar-thumb:hover {
+
     background: #555;
+
+}
+
+
+
+/* =========================================================
+
+   MOBILE RESPONSIVE OPTIMIZATION (SHAZAM MOBILE MODE)
+
+   ========================================================= */
+
+
+
+@media (max-width: 768px) {
+
+
+
+    /* Core layout */
+
+    .app-container {
+
+        padding: 1rem;
+
+    }
+
+
+
+    .luminous-card {
+
+        width: 100%;
+
+        max-width: 100%;
+
+        min-height: auto;
+
+        padding: 1.25rem;
+
+        border-radius: 1.2rem;
+
+    }
+
+
+
+    .outer-border {
+
+        display: none; /* Removes heavy desktop border on mobile */
+
+    }
+
+
+
+    .title {
+
+        font-size: 1.5rem;
+
+        margin-bottom: 1.5rem;
+
+    }
+
+
+
+    /* Back button */
+
+    .back-button {
+
+        top: 1rem;
+
+        left: 1rem;
+
+        padding: 0.6rem 1rem;
+
+        font-size: 0.75rem;
+
+    }
+
+
+
+    /* Dropzone */
+
+    .drop-zone {
+
+        padding: 1.5rem 1rem;
+
+    }
+
+
+
+    .upload-icon {
+
+        width: 3rem;
+
+        height: 3rem;
+
+    }
+
+
+
+    .drop-text {
+
+        font-size: 0.9rem;
+
+        text-align: center;
+
+    }
+
+
+
+    /* File Items */
+
+    .file-item {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        padding: 0.75rem;
+
+    }
+
+
+
+    .file-header {
+
+        width: 100%;
+
+        flex-direction: row;
+
+        justify-content: space-between;
+
+    }
+
+
+
+    .file-size,
+
+    .upload-status,
+
+    .upload-complete {
+
+        font-size: 0.7rem;
+
+    }
+
+
+
+    .progress-bar {
+
+        width: 100%;
+
+    }
+
+
+
+    /* Success screen */
+
+    .success-icon {
+
+        width: 3rem;
+
+        height: 3rem;
+
+        margin-bottom: 0.5rem;
+
+    }
+
+
+
+    .success-title {
+
+        font-size: 1.25rem;
+
+    }
+
+
+
+    .success-text {
+
+        font-size: 0.9rem;
+
+        margin-bottom: 1.5rem;
+
+    }
+
+
+
+    /* QR code */
+
+    .qr-container {
+
+        margin: 1.25rem 0;
+
+    }
+
+
+
+    .qr-code {
+
+        padding: 0.75rem;
+
+        width: 160px !important;
+
+        height: 160px !important;
+
+    }
+
+
+
+    /* Download link */
+
+    .url-container {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 0.75rem;
+
+        padding: 0.75rem;
+
+    }
+
+
+
+    .download-url {
+
+        width: 100%;
+
+        padding-right: 0;
+
+        white-space: normal;
+
+        word-break: break-all;
+
+        text-align: left;
+
+    }
+
+
+
+    .copy-button {
+
+        position: static;
+
+        transform: none;
+
+        align-self: flex-start;
+
+        margin-top: 0.25rem;
+
+    }
+
+
+
+    /* Buttons */
+
+    .action-button-container {
+
+        margin-top: 1.25rem;
+
+    }
+
+
+
+    .action-button {
+
+        font-size: 1rem;
+
+        padding: 0.9rem;
+
+        width: 100%;
+
+    }
+
+
+
+    /* Scrollbars */
+
+    .files-list {
+
+        max-height: 10rem;
+
+    }
+
+}
+
+
+
+/* Ultra-small devices (iPhone SE, Android mini) */
+
+@media (max-width: 480px) {
+
+
+
+    .title {
+
+        font-size: 1.3rem;
+
+    }
+
+
+
+    .drop-zone {
+
+        padding: 1rem;
+
+    }
+
+
+
+    .upload-icon {
+
+        width: 2.5rem;
+
+        height: 2.5rem;
+
+    }
+
+
+
+    .qr-code {
+
+        width: 130px !important;
+
+        height: 130px !important;
+
+    }
+
 }

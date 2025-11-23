@@ -15,7 +15,6 @@ function Home() {
                         <span className="gradient-text">SHAZAM</span>
 
                     </h1>
-
                     <p className="home-subtitle">
                         Powerful tools for file sharing and AI assistance
                     </p>

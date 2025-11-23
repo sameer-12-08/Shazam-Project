@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Sparkles, ArrowLeft, Copy, Check, RefreshCw } from 'lucide-react';
 import '../App.css';
+import { smartFetch } from "../utils/api";
+
 
 function PromptRefiner() {
     const navigate = useNavigate();
@@ -21,12 +23,10 @@ function PromptRefiner() {
         setIsRefining(true);
 
         try {
-            const response = await fetch('http://localhost:8080/api/refine', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({prompt: inputPrompt}),
+            const response = await smartFetch("/api/refine", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ prompt: inputPrompt })
             });
 
             if (!response.ok) throw new Error('Refinement failed');

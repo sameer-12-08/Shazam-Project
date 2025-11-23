@@ -13,7 +13,11 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/api")
-@CrossOrigin(origins = "http://localhost:3000/refiner")
+@CrossOrigin(origins = {
+        "http://localhost:3000",
+        "https://handmade-malcolm-outwardly.ngrok-free.dev"
+})
+
 public class PromptRefinerController {
 
     @Autowired

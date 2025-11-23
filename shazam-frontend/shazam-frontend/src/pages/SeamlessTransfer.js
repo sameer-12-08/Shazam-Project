@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import {Upload, X, Link, CheckCircle, ArrowLeft} from 'lucide-react';
 import '../App.css';
+import { smartFetch } from "../utils/api";
 
 function SeamlessTransfer() {
     const [files, setFiles] = useState([]);
@@ -102,9 +103,9 @@ function SeamlessTransfer() {
                 }));
             }, 200);
 
-            const response = await fetch('http://localhost:8080/api/upload', {
-                method: 'POST',
-                body: formData,
+            const response = await smartFetch("/api/upload", {
+                method: "POST",
+                body: formData
             });
 
             clearInterval(progressInterval);

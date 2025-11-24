@@ -2,6 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Upload, Sparkles } from 'lucide-react';
 import './Home.css';
+import ShinyText from '../components/ShinyText';
 
 function Home() {
     const navigate = useNavigate();
@@ -12,9 +13,15 @@ function Home() {
                 {/* Header */}
                 <div className="home-header">
                     <h1 className="home-title">
-                        <span className="gradient-text">SHAZAM</span>
+                        <ShinyText
+                            text="SHAZAM"
+                            speed={3}
+                            disabled={false}
+                            className="Power House"
+                        />
 
                     </h1>
+
                     <p className="home-subtitle">
                         Powerful tools for file sharing and AI assistance
                     </p>

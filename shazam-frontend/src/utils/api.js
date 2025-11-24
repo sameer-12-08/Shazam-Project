@@ -1,6 +1,6 @@
 export async function smartFetch(path, options = {}) {
     const endpoints = [
-        "https://127.0.0.1:4040.ngrok_free.dev",
+        "https://watson-contents-episodes-audio.trycloudflare.com ",
         "https://handmade-malcolm-outwardly.ngrok-free.dev",
         "http://localhost:8080"             // local development
     ];

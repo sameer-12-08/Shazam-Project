@@ -15,7 +15,8 @@ import java.util.Map;
 @RequestMapping("/api")
 @CrossOrigin(origins = {
         "http://localhost:3000",
-        "https://handmade-malcolm-outwardly.ngrok-free.dev"
+        "https://handmade-malcolm-outwardly.ngrok-free.dev",
+        "https://watson-contents-episodes-audio.trycloudflare.com"
 })
 
 public class PromptRefinerController {

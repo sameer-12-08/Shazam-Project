@@ -155,9 +155,9 @@ function SeamlessTransfer() {
             <button
                 onClick={() => navigate('/')}
                 className = "back-button"
-                >
-                    <ArrowLeft size = {20} />
-                    Back to Home
+            >
+                <ArrowLeft size = {20} />
+                Back to Home
             </button>
             <div className="luminous-card"
                  style={{ transform: isLumenActive ? 'translateY(-0.2rem)' : 'translateY(0)' }}

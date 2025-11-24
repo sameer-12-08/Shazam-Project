@@ -28,7 +28,7 @@ function Home() {
                         onClick={() => navigate('/transfer')}
                     >
                         <div className="feature-icon transfer-icon">
-                            <Upload size={48} />
+                            <Upload size={40} />
                         </div>
                         <h2 className="feature-title">Seamless Transfer</h2>
                         <p className="feature-description">
@@ -51,7 +51,7 @@ function Home() {
                         onClick={() => navigate('/refiner')}
                     >
                         <div className="feature-icon refiner-icon">
-                            <Sparkles size={48} />
+                            <Sparkles size={40} />
                         </div>
                         <h2 className="feature-title">Prompt Refiner</h2>
                         <p className="feature-description">

@@ -1,6 +1,6 @@
 export async function smartFetch(path, options = {}) {
     const endpoints = [
-        "https://needed-headers-novel-zen.trycloudflare.com",
+        "https://marina-outline-eden-eating.trycloudflare.com",
         "https://handmade-malcolm-outwardly.ngrok-free.dev",
         "http://localhost:8080"             // local development
     ];

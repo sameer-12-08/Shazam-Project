@@ -16,7 +16,7 @@ import java.util.Map;
 @CrossOrigin(origins = {
         "http://localhost:3000",
         "https://handmade-malcolm-outwardly.ngrok-free.dev",
-        "https://needed-headers-novel-zen.trycloudflare.com"
+        "https://marina-outline-eden-eating.trycloudflare.com"
 })
 
 public class PromptRefinerController {

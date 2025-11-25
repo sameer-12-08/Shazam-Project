@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { Sparkles, ArrowLeft, Copy, Check, RefreshCw } from 'lucide-react';
 import '../App.css';
 import { smartFetch } from "../utils/api";
+import TypedTextarea from '../components/TypedTextarea';
 
 
 function PromptRefiner() {
@@ -125,10 +126,16 @@ function PromptRefiner() {
                         }}>
                             Original Prompt
                         </label>
-                        <textarea
+                        <TypedTextarea
+                            texts={[
+                                "Enter your prompt here...",
+                                `e.g., "write code for sorting"`,
+                                "Happy coding!"
+                            ]}
+                            typingSpeed={80}
+                            pauseDuration={1200}
                             value={inputPrompt}
                             onChange={(e) => setInputPrompt(e.target.value)}
-                            placeholder="Enter your prompt here... e.g., 'write code for sorting'"
                             style={{
                                 width: '100%',
                                 minHeight: '150px',
@@ -143,6 +150,7 @@ function PromptRefiner() {
                                 fontFamily: 'inherit'
                             }}
                         />
+
                     </div>
 
                     <div style={{display: 'flex', gap: '1rem', marginBottom: '2rem'}}>
